@@ -10,39 +10,6 @@
   margin: auto;
 }
 
-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  transition: .5s ease;
-}
-
-.secondimage {
-  position: absolute;
-  -webkit-transform: translate (-50%, -50%);
-  -ms-transform: translate (-50%, -50%);
-  transform: translate (-50%, -50%);
-}
-
-.img-container {
-  position: relative;
-}
-
-.img-container:hover .overlay {
-  opacity: 1;
-}
-
 .products {
   position: absolute;
   display: inline-block;
@@ -60,6 +27,39 @@ img {
   width: 30%;
 }
 
+.img-container {
+  position: relative;
+}
+/* Main image */
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* Overlay */
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: .5s ease;
+}
+/* Second image */
+.secondimage {
+  position: absolute;
+  -webkit-transform: translate (-50%, -50%);
+  -ms-transform: translate (-50%, -50%);
+  transform: translate (-50%, -50%);
+}
+
+.img-container:hover .overlay {
+  opacity: 1;
+}
+/* Caption */
 figcaption {
   margin-top: 10px;
   text-align: left;
@@ -76,6 +76,7 @@ figcaption {
   font-weight: 800;
   font-size: 16px;
 }
+
 .red {
   color: red;
   font-weight: 600;
@@ -85,7 +86,7 @@ figcaption {
 .decoration {
   text-decoration: line-through;
 }
-
+/* Label */
 .label {
   position: absolute;
   color: white;
@@ -93,11 +94,11 @@ figcaption {
   left: 0;
   padding: 2px;
 }
-
+/* Discount label */
 .label-red {
   background-color: red;
 }
-
+/* Sustainability label */
 .label-green {
   background-color: green;
 }
@@ -107,7 +108,7 @@ figcaption {
   bottom: 0;
   left: 52px;
 }
-
+/* Heart icon */
 .heart {
   position: absolute;
   background-color: white;
