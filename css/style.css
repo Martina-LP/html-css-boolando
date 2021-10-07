@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.secondimage {
+  position: absolute;
+  -webkit-transform: translate (-50%, -50%);
+  -ms-transform: translate (-50%, -50%);
+  transform: translate (-50%, -50%);
+}
+
+.img-container {
+  position: relative;
+}
+
+.img-container:hover .overlay {
+  opacity: 1;
+}
+
+.products {
+  position: absolute;
+  display: inline-block;
+  width: 70%;
+}
+
+.row {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.item {
+  position: relative;
+  display: inline-block;
+  width: 30%;
+}
+
+figcaption {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.firstrow {
+  color: gray;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.secondrow {
+  color: black;
+  font-weight: 800;
+  font-size: 16px;
+}
+.red {
+  color: red;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.decoration {
+  text-decoration: line-through;
+}
+
+.label {
+  position: absolute;
+  color: white;
+  bottom: 75px;
+  left: 0;
+  padding: 2px;
+}
+
+.label-red {
+  background-color: red;
+}
+
+.label-green {
+  background-color: green;
+}
+
+.label-green:first-child {
+  text-align: right;
+  bottom: 0;
+  left: 52px;
+}
+
+.heart {
+  position: absolute;
+  background-color: white;
+  color: black;
+  top: 15px;
+  right: 0;
+  padding: 5px;
+}
